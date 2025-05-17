@@ -1,0 +1,265 @@
+@import './card-component.css';
+
+/* 카드 레이아웃 */
+
+.product-black,
+.product-white,
+.product-black-1,
+.product-white-1 {
+  display: flex;
+  justify-content: center;
+  inline-size: 100%;
+  block-size: var(--size);
+  margin-bottom: 20px;
+  padding: 0;
+
+  .content {
+    margin-top: var(--large-spacing);
+    inline-size: 100%;
+  }
+
+  .header {
+    font-size: var(--large-text);
+    text-align: center;
+    margin-bottom: var(--small-spacing);
+  }
+  .description {
+    font-size: var(--base-text);
+    line-height: var(--line-normal);
+    text-align: center;
+    margin-bottom: var(--small-spacing);
+    font-weight: 600;
+  }
+  .sub-description {
+    display: flex;
+    justify-content: center;
+    font-size: var(--small-text);
+    margin-bottom: 12px;
+    color: var(--gray);
+
+    span {
+      margin-bottom: 0;
+    }
+  }
+
+  .button {
+    font-size: var(--xx-small-text);
+    display: flex;
+    justify-content: center;
+    gap: var(--small-spacing);
+
+    button {
+      padding-top: var(--x-small-spacing);
+      padding-bottom: var(--x-small-spacing);
+      padding-left: var(--small-spacing);
+      padding-right: var(--small-spacing);
+    }
+  }
+}
+
+.product-black,
+.product-black-1 {
+  background: black;
+
+  .header {
+    color: var(--white);
+    font-weight: 700;
+  }
+
+  .description {
+    color: var(--white);
+  }
+
+  .see-more {
+    background: var(--blue-100);
+    border-radius: 20px;
+    color: var(--white);
+    border: none;
+  }
+  .see-price {
+    border: 1px solid var(--blue-100);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--blue-100);
+  }
+}
+.product-white,
+.product-white-1 {
+  background: skyblue;
+
+  .header {
+    color: var(--black);
+    font-weight: 700;
+  }
+
+  .see-more {
+    background: var(--black);
+    border-radius: 20px;
+    color: var(--white);
+    border: none;
+  }
+  .see-price {
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--black);
+  }
+}
+
+.product-black-1.ipad-pro {
+  width: 100%;
+  height: 500px;
+  background-image: url('./src/apple/products/ipad_pro.jpeg'); /* 1x 이미지 기본값 */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .watch-bg {
+    background-image: url('./src/apple/products/ipad_pro_2x.jpeg'); /* 2x 이미지 */
+  }
+}
+.product-white-1.ipad-air {
+  width: 100%;
+  height: 500px;
+  background-image: url('./src/apple/products/ipad_air.jpeg'); /* 1x 이미지 기본값 */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .watch-bg {
+    background-image: url('./src/apple/products/ipad_air_2x.jpeg'); /* 2x 이미지 */
+  }
+}
+.product-black.iphone15-pro {
+  width: 100%;
+  height: 500px;
+  background-image: url('./src/apple/products/iphone15_pro.jpeg'); /* 1x 이미지 기본값 */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .watch-bg {
+    background-image: url('./src/apple/products/iphone15_pro_2x.jpeg'); /* 2x 이미지 */
+  }
+}
+
+.product-white.iphone15 {
+  width: 100%;
+  height: 500px;
+  background-image: url('./src/apple/products/iphone15.jpeg'); /* 1x 이미지 기본값 */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .watch-bg {
+    background-image: url('./src/apple/products/iphone15_2x.jpeg'); /* 2x 이미지 */
+  }
+}
+
+.product-black.watch {
+  width: 100%;
+  height: 500px;
+  background-image: url('./src/apple/products/apple_watch.jpeg'); /* 1x 이미지 기본값 */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .watch-bg {
+    background-image: url('./src/apple/products/apple_watch_2x.jpeg'); /* 2x 이미지 */
+  }
+}
+
+.product-white.macbook-air {
+  width: 100%;
+  height: 500px;
+  background-image: url('./src/apple/products/macbook_air.jpeg'); /* 1x 이미지 기본값 */
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .watch-bg {
+    background-image: url('./src/apple/products/macbook_air_2x.jpeg'); /* 2x 이미지 */
+  }
+}
+
+.product-black.airpod-pro {
+  width: 100%;
+  height: 500px;
+  background-image: url('./src/apple/products/airpods_pro.jpeg'); /* 1x 이미지 기본값 */
+  background-size: cover;
+  background-position: 50% 70%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .watch-bg {
+    background-image: url('./src/apple/products/airpods_pro_2x.jpeg'); /* 2x 이미지 */
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    display: grid;
+    inline-size: 100%;
+    block-size: var(--size);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+
+    .product-black-1.ipad-pro {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .product-white-1.ipad-air {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .product-black.iphone15-pro {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  .product-black-1.ipad-pro {
+    width: 100%;
+    height: 500px;
+    background-image: url('./src/apple/products/ipad_pro_wide.jpeg'); /* 1x 이미지 기본값 */
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .watch-bg {
+      background-image: url('./src/apple/products/ipad_pro_wide_2x.jpeg'); /* 2x 이미지 */
+    }
+  }
+  .product-white-1.ipad-air {
+    width: 100%;
+    height: 500px;
+    background-image: url('./src/apple/products/ipad_air_wide.jpeg'); /* 1x 이미지 기본값 */
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .watch-bg {
+      background-image: url('./src/apple/products/ipad_air_wide_2x.jpeg'); /* 2x 이미지 */
+    }
+  }
+  .product-black.iphone15-pro {
+    width: 100%;
+    height: 500px;
+    background-image: url('./src/apple/products/iphone15_pro_wide.jpeg'); /* 1x 이미지 기본값 */
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .watch-bg {
+      background-image: url('./src/apple/products/iphone15_pro_wide_2x.jpeg'); /* 2x 이미지 */
+    }
+  }
+}
